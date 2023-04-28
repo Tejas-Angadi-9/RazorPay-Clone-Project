@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <title>RazorPay Clone Website by me</title>
 
@@ -14,9 +17,25 @@
         padding-top: 12rem;
         padding-bottom: 12rem;
        }
+
+      .companiesList{
+        animation-delay: 0;
+        animation: 12s linear infinite moveCompany;
+      }   
+
+      @keyframes moveCompany {
+        0%{
+          top: 0;
+        }
+        100%{
+          top: -160%;
+        }
+      }
     </style>
 </head>
-<body class="overflow-x-hidden">
+
+<body>
+  <div class="overflow-x-hidden">
     <!--First Lecture  -->
     <nav class="bg-deepBlue">
         <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
@@ -882,7 +901,7 @@
     </div>
   </div>
 </div>
-</div>
+
     </section>
 
     <!-- Core Features -->
@@ -898,32 +917,32 @@
           <!-- card1 -->
           <div>
             <img src="images/instant-activation-icon.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">Instant Activation</h3>
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">Instant Activation</h3>
             <p class="font-mullish text-white mt-4 opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
           </div>
 
           <!-- card2 -->
           <div>
             <img src="images/easy-integration.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">Easy Integration</h3>
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">Easy Integration</h3>
             <p class="font-mullish text-white mt-4 opacity-80">With plugins for all major platforms and languages, integrate and go live with Razorpay in less than an hour.</p>
           </div>
           <!-- card3 -->
           <div>
             <img src="images/api-driven-icon.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">API Driven</h3>
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">API Driven</h3>
             <p class="font-mullish text-white mt-4 opacity-80">Build your business for scale with our complete API-driven automation that requires zero manual intervention.</p>
           </div>
           <!-- card4 -->
           <div>
             <img src="images/payment-modes.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">100+ payment modes</h3>
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">100+ payment modes</h3>
             <p class="font-mullish text-white mt-4 opacity-80">Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI, Wallets etc.</p>
           </div>
           <!-- card5 -->
           <div>
             <img src="images/simple-pricing.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">Simple Pricing</h3>
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">Simple Pricing</h3>
             <p class="font-mullish text-white mt-4 opacity-80">Our innovative payment solutions with competitive pricing make payments simpler</p>
           </div>
           <!-- card6 -->
@@ -935,22 +954,106 @@
           <!-- card7 -->
           <div>
             <img src="images/dashboard-reporting-icon.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">Dashboard Reporting
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">Dashboard Reporting
             </h3>
             <p class="font-mullish text-white mt-4 opacity-80">Real-time data and insights on your Razorpay Dashboard to make informed business decisions.</p>
           </div>
           <!-- card8-->
           <div>
             <img src="images/secure-icon.svg" loading="lazy">
-            <h3 class="mt-4 font-mullish font-extrabold text-white text-lg mb-4">Secure</h3>
+            <h3 class="mt-4 font-mullish font-bold text-white text-lg mb-4">Secure</h3>
             <p class="font-mullish text-white mt-4 opacity-80">PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- join razorpay section -->
+    <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[150px] -z-10">
+      <div class="w-11/12 max-w-[1080px] relative mx-auto flex">
+        <!-- left part -->
+        <div class="flex flex-col justify-center max-w-[600px]">
+          <h3 class="font-mullish font-extrabold text-2xl text-deepBlueHead"> Join the 50,00,000 businesses using Razorpay</h3>
+          <div class="w-6 h-1 bg-greenLight my-4"></div>
+          <p class="font-mullish text-deepBlueHead">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
+            <br><br>
+            Focus on your business while we handle the complexities of payments for you.</p>
+        </div>
 
+        <!-- right part & we need to apply 2 linear gradients of gray color. so that we get the faded effect-->
+        <div class="relative h-[500px] w-[500px] overflow-hidden">
+          <div style="background: linear-gradient(180deg, #f4f8ff, #fff0);"
+          class="absolute w-full h-[150px] top-0 z-50">
+          </div>
+          <img src="images/comanies.png"
+          width="500px"
+          class="absolute h-auto object-cover companiesList "> <!--moveImage animation is created up in styles tag-->
+          <div style="background: linear-gradient(0deg, #f4f8ff, #fff0);"
+          class="absolute w-full h-[150px] bottom-0 z-50"></div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Clients section -->
+    <section class="relative">
+    <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+        <img src="images/feature-section1-dottedrows.png" 
+        class="absolute w-[200px] top-[8rem] left-[2rem] -z-[10]">
+        <h2 class="font-mullish font-extrabold text-center text-2xl my-4 text-[#02042a]">An Experience <br> People Love to Talk About</h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mb-10"></div>
+
+      <!-- left arrow button -->
+    <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 flex justify-center items-center">
+      <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
+        <i data-feather="chevron-left"
+        class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
+        </i>
+      </div>
+    </button>
+
+    <!-- Middle segment -->
+    <div class="flex max-w-[960px] items-center mx-auto space-x-[10rem]">
+    <!-- left person's image -->
+    <img src="images/subham.042b5094.png"
+    width="320px"
+    height="320px"
+    class="rounded-xl">
+
+      <div class="max-w-[400px]">
+        <!-- apostope image -->
+      <img src="images/quotes.svg" alt=""
+      width="35px"
+      height="40px"
+      class="mb-2">    
+      <p class="font-mullish text-3xl font-extralight leading-[45px]">
+        Acquire Customers From New Customer Segments</p>
+      <a href="#"
+      class="text-grayText italic underline mt-12">
+      Learn More</a>
+      <h3 class="font-mullish font-extrabold text-2xl mb-1">Subham Kumar  </h3>
+      <p class="font-mullish font-medium py-2">Product Manager</p>
+      <img src="images/unacademy.1c618f03.svg" alt=""
+      width="160px" height="30px">
+      </div>
+    </div>
+
+      <!-- right arrow button -->
+      <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 flex justify-center items-center">
+        <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
+          <i data-feather="chevron-right"
+          class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
+          </i>
+        </div>
+      </button>
+
+    <!-- div for 6 dots for navigation -->
+    <div>
+      <div></div>
+    </div>
+    </div>
+    </section>
+  </div>
+  
 <script>
     feather.replace()
 </script>
