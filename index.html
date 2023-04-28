@@ -31,6 +31,12 @@
           top: -160%;
         }
       }
+
+      .ctaSection{
+        background-size: 100% 100%;
+        padding-top: 8rem;
+        padding-bottom: 7rem;
+      }
     </style>
 </head>
 
@@ -1024,7 +1030,7 @@
       <img src="images/quotes.svg" alt=""
       width="35px"
       height="40px"
-      class="mb-2">    
+      class="-mb-2">    
       <p class="font-mullish text-3xl font-extralight leading-[45px]">
         Acquire Customers From New Customer Segments</p>
       <a href="#"
@@ -1047,10 +1053,69 @@
       </button>
 
     <!-- div for 6 dots for navigation -->
-    <div>
-      <div></div>
+    <div class="flex flex-row space-x-2 w-full justify-center">
+      <!-- dot1 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot2 -->
+      <div class="h-[10px] w-[10px] bg-lightBlue500 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot3 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot4 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot5 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot6 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot7 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
     </div>
-    </div>
+    </section>
+
+    <!-- last section -->
+    <section class="bg-[url(images/CTABg.svg)] w-full h-full bg-cover bg-no-repeat relative ctaSection">
+      <!-- main content box -->
+      <div class="w-11/12 max-w-[1080px] relative flex flex-row items-center justify-between space-x-20 mx-auto">
+        
+        <!-- left part -->
+        <div>
+            <h2 class="font-mullish font-extrabold text-2xl text-white mb-3">
+              Supercharge your business with Razorpay</h2>
+            <div class="w-6 h-1 bg-greenLight"></div>
+            <p class="py-7 font-mullish text-white">Sign up now to experience the future of payments and offer <br> your customers the best checkout experience.</p>
+        
+          <ul class="flex flex-wrap gap-4 ">
+            <li class="flex inline-block text-white font-mullish gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <p>Quick onboarding
+              </p>
+            </li>
+            <li class=" flex text-white font-mullish gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <p>Access to entire product suite
+              </p>
+            </li>
+            <li class=" flex text-white font-mullish gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <p>API access
+              </p>
+            </li>
+            <li class="flex text-white font-mullish gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <p>24x7 support
+              </p>
+            </li>
+          </ul>
+
+          <button class="mt-5 min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm hover:text-lightBlue500 transition-all duration-200 py-3 px-4">
+            Sign Up Now
+          </button>
+        </div>
+
+          <!-- right part -->
+          <div>
+            <img src="images/ctaImg.svg" alt="" width="240px" height="282px">
+          </div>
+      </div>
     </section>
   </div>
   
