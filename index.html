@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="icon" type="image/x-icon" href="/images/razorpayXicon.svg">
-    <title>RazorPay Clone Website by me</title>
+    <title>RazorPay Clone by - Tejas Angadi</title>
 
     <style>
       .corefeaturesection{
@@ -21,7 +21,7 @@
 
       .companiesList{
         animation-delay: 0;
-        animation: 12s linear infinite moveCompany;
+        animation: 15s linear infinite moveCompany;
       }   
 
       @keyframes moveCompany {
@@ -43,6 +43,13 @@
 
 <body>
   <div class="overflow-x-hidden">
+    <!-- header part -->
+    <header class="bg-white w-full h-15">
+      <div class="font-mullish flex relative justify-center items-center"> 
+        <p class="px-3 text-[16px] text-deepBlue opacity-75">Simplify payroll with RazorpayX Payroll - Fast & Compliant</p>
+        <button class="my-2 mx-3 p-2 text-[12px] text-white bg-lightBlue300 rounded-md hover:bg-lightBlue500 transition-all duration-200 w-[150px] font-bold">Claim 1 Month FREE</button>
+      </div>
+    </header>
     <!--First Lecture  -->
     <nav class="bg-deepBlue">
         <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
@@ -63,12 +70,12 @@
                 </li>
 
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
-                    <a href="#">Banking</a>
+                    <a href="#">Banking+</a>
 
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
                 </li>
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
-                    <a href="#">Corporate Card</a>
+                    <a href="#">Line of Credit</a>
                 </li>
                 <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
                     <a href="#">Payroll</a>
@@ -114,14 +121,14 @@
         <div class=" max-w-[1080px] flex flex-row justify-between items-center mx-auto"> <!-- This is around 83%-->
             <!-- Left part -> text -->
             <div class="space-y-8">
-                <h1 class="text-white font-mullish font-bold text-[40px] leading-[1.2] text-white">
+                <h1 class="text-white font-mullish font-bold text-[40px] leading-[1.2]">
                     Power your finance, grow your business
                 </h1>
                 <div class="w-6 h-1 bg-greenLight "></div>
                 <p class="text-white font-mullish text-[18px] leading-7 opacity-75">
                     Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital
                 </p>
-                <button class="text-white bg-lightBlue rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[16px] px-[15px] w-25">Sign Up Now</button>
+                <button class="text-white bg-lightBlue rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[16px] px-[15px] w-25">Sign Up Now<span class="ml-2">&#8594;</span></button>
             </div>
             <!-- Right part -> image -->
             <img src="images/hero-illustration.jpg" alt=""
@@ -1009,14 +1016,7 @@
         <h2 class="font-mullish font-extrabold text-center text-2xl my-4 text-[#02042a]">An Experience <br> People Love to Talk About</h2>
         <div class="w-6 h-1 bg-greenLight mx-auto mb-10"></div>
 
-      <!-- left arrow button -->
-    <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 flex justify-center items-center">
-      <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
-        <i data-feather="chevron-left"
-        class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
-        </i>
-      </div>
-    </button>
+
 
     <!-- Middle segment -->
     <div class="flex max-w-[960px] items-center mx-auto space-x-[10rem]">
@@ -1056,9 +1056,9 @@
     <!-- div for 6 dots for navigation -->
     <div class="flex flex-row space-x-2 w-full justify-center">
       <!-- dot1 -->
-      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
-      <!-- dot2 -->
       <div class="h-[10px] w-[10px] bg-lightBlue500 rounded-full mt-10 cursor-pointer"></div>
+      <!-- dot2 -->
+      <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
       <!-- dot3 -->
       <div class="h-[10px] w-[10px] bg-gray-300 rounded-full mt-10 cursor-pointer"></div>
       <!-- dot4 -->
@@ -1308,7 +1308,6 @@
           </div>
         </div>
     </footer>
-
   </div>
 <script>
     feather.replace()
